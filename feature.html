@@ -1,292 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>AI.Tech - Artificial Intelligence HTML Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>三只蚂蚁</title>
+	<link rel="icon" href="img/Fevicon.png" type="image/png">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+  <!--================Header Menu Area =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container box_1620">
+          <!-- Brand and toggle get grouped for better mobile display -->
+<!--          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>-->
+          <a href="index.html" class="navbar-brand">
+            <h4 class="text-white">三只蚂蚁</h4>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav justify-content-end">
+              <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+              <li class="nav-item active"><a class="nav-link" href="feature.html">功能</a></li>
+              <li class="nav-item"><a class="nav-link" href="pricing.html">价格</a>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">页面</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="https://threeant.cn">博客</a></li>
+                </ul>
+							</li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">联系</a></li>
+            </ul>
+
+            <ul class="navbar-right">
+              <li class="nav-item">
+                <button class="button button-header bg">登录</button>
+              </li>
+            </ul>
+          </div> 
         </div>
+      </nav>
     </div>
-    <!-- Spinner End -->
+  </header>
+  <!--================Header Menu Area =================-->
 
-
-    <!-- Navbar Start -->
-    <div class="container-fluid sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white">AI<span class="text-dark">.</span>Tech</h1>
-                </a>
-                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="project.html" class="nav-item nav-link">Projects</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu bg-light mt-2">
-                                <a href="feature.html" class="dropdown-item active">Features</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="faq.html" class="dropdown-item">FAQs</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
-                        data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                </div>
-            </nav>
-        </div>
+  <!--================ Hero sm Banner start =================-->      
+  <section class="hero-banner hero-banner--sm mb-30px">
+    <div class="container">
+      <div class="hero-banner--sm__content">
+        <h1>Our Features</h1>
+        <nav aria-label="breadcrumb" class="banner-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">首页</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Our Feature</li>
+          </ol>
+        </nav>
+      </div>
     </div>
-    <!-- Navbar End -->
+  </section>
+  <!--================ Hero sm Banner end =================-->
 
+  
+  <!--================ Offer section start =================-->      
+  <section class="section-margin">
+    <div class="container">
+      <div class="section-intro pb-85px text-center">
+        <h2 class="section-intro__title">Features We Offer</h2>
+        <p class="section-intro__subtitle">Vel aliquam quis, nulla pede mi commodo tristique nam hac. Luctus torquent velit felis commodo pellentesque nulla cras. Tincidunt hacvel alivquam quis nulla pede mi commodo tristique nam hac  luctus torquent</p>
+      </div>
 
-    <!-- Hero Start -->
-    <div class="container-fluid pt-5 bg-primary hero-header">
-        <div class="container pt-5">
-            <div class="row g-5 pt-5">
-                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">Features</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Features</li>
-                        </ol>
-                    </nav>
-                </div>
-                <div class="col-lg-6 align-self-end text-center text-lg-end">
-                    <img class="img-fluid" src="img/hero-img.png" alt="" style="max-height: 300px;">
-                </div>
+      <div class="row">
+        <div class="col-lg-6">
+
+          <div class="row offer-single-wrapper">
+            <div class="col-lg-6 offer-single">
+              <div class="card offer-single__content text-center">
+                <span class="offer-single__icon">
+                  <i class="ti-pencil-alt"></i>
+                </span>
+                <h4>Easy To Manage</h4>
+                <p>Posuere porttitor justo ornare dictum ultricies enim imperdiet integer habitant.</p>
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- Hero End -->
-
-
-    <!-- Full Screen Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-light p-3"
-                            placeholder="Type search keyword">
-                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                    </div>
-                </div>
+            
+            <div class="col-lg-6 offer-single">
+              <div class="card offer-single__content text-center">
+                <span class="offer-single__icon">
+                  <i class="ti-ruler-pencil"></i>
+                </span>
+                <h4>Analytics Tool</h4>
+                <p>Posuere porttitor justo ornare dictum ultricies enim imperdiet integer habitant.</p>
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- Full Screen Search End -->
+          </div>
 
-
-    <!-- Feature Start -->
-    <div class="container-fluid bg-dark feature pt-5">
-        <div class="container pt-5">
-            <div class="row g-5">
-                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Why Choose Us</div>
-                    <h1 class="text-white mb-4">We're Best in AI Industry with 10 Years of Experience</h1>
-                    <p class="text-light mb-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
-                        stet no labore lorem sit. Sanctus clita duo justo et tempor</p>
-                    <div class="d-flex align-items-center text-white mb-3">
-                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
-                            <i class="fa fa-check"></i>
-                        </div>
-                        <span>Diam dolor diam ipsum et tempor sit</span>
-                    </div>
-                    <div class="d-flex align-items-center text-white mb-3">
-                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
-                            <i class="fa fa-check"></i>
-                        </div>
-                        <span>Diam dolor diam ipsum et tempor sit</span>
-                    </div>
-                    <div class="d-flex align-items-center text-white mb-3">
-                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
-                            <i class="fa fa-check"></i>
-                        </div>
-                        <span>Diam dolor diam ipsum et tempor sit</span>
-                    </div>
-                    <div class="row g-4 pt-3">
-                        <div class="col-sm-6">
-                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
-                                <i class="fa fa-home fa-3x text-white"></i>
-                                <div class="ms-3">
-                                    <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
-                                    <p class="text-white mb-0">Happy Clients</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
-                                <i class="fa fa-home fa-3x text-white"></i>
-                                <div class="ms-3">
-                                    <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
-                                    <p class="text-white mb-0">Project Complete</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
-                    <img class="img-fluid" src="img/feature.png" alt="">
-                </div>
+          <div class="row offer-single-wrapper">
+            <div class="col-lg-6 offer-single">
+              <div class="card offer-single__content text-center">
+                <span class="offer-single__icon">
+                  <i class="ti-cut"></i>
+                </span>
+                <h4>Professionals Tools</h4>
+                <p>Posuere porttitor justo ornare dictum ultricies enim imperdiet integer habitant.</p>
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- Feature End -->
-
-
-    <!-- Newsletter Start -->
-    <div class="container-fluid bg-primary newsletter py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
-                    <img class="img-fluid" src="img/newsletter.png" alt="">
-                </div>
-                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
-                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Newsletter</div>
-                    <h1 class="text-white mb-4">Let's subscribe the newsletter</h1>
-                    <div class="position-relative w-100 mt-3 mb-2">
-                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
-                            placeholder="Enter Your Email" style="height: 48px;">
-                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
-                                class="fa fa-paper-plane text-primary fs-4"></i></button>
-                    </div>
-                    <small class="text-white-50">Diam sed sed dolor stet amet eirmod</small>
-                </div>
+            
+            <div class="col-lg-6 offer-single">
+              <div class="card offer-single__content text-center">
+                <span class="offer-single__icon">
+                  <i class="ti-light-bulb"></i>
+                </span>
+                <h4>Ready Content</h4>
+                <p>Posuere porttitor justo ornare dictum ultricies enim imperdiet integer habitant.</p>
+              </div>
             </div>
+          </div>
+
         </div>
+        <div class="col-lg-6">
+          <div class="offer-single__img">
+            <img class="img-fluid" src="img/home/offer.png" alt="">
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Newsletter End -->
+  </section>
+  <!--================ Offer section end =================-->
+  
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 footer pt-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <a href="index.html" class="d-inline-block mb-3">
-                        <h1 class="text-white">AI<span class="text-primary">.</span>Tech</h1>
-                    </a>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor</p>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <h5 class="text-white mb-4">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <h5 class="text-white mb-4">Popular Link</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Career</a>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <h5 class="text-white mb-4">Our Services</h5>
-                    <a class="btn btn-link" href="">Robotic Automation</a>
-                    <a class="btn btn-link" href="">Machine learning</a>
-                    <a class="btn btn-link" href="">Predictive Analysis</a>
-                    <a class="btn btn-link" href="">Data Science</a>
-                    <a class="btn btn-link" href="">Robot Technology</a>
-                </div>
-            </div>
+
+  <!--================ Testimonial section start =================-->      
+  <section class="section-padding bg-magnolia">
+    <div class="container">
+      <div class="section-intro pb-5 text-center">
+        <h2 class="section-intro__title">Client Says Me</h2>
+        <p class="section-intro__subtitle">Vel aliquam quis, nulla pede mi commodo tristique nam hac. Luctus torquent velit felis commodo pellentesque nulla cras. Tincidunt hacvel alivquam </p>
+      </div>
+
+      <div class="owl-carousel owl-theme testimonial">
+        <div class="testimonial__item text-center">
+          <div class="testimonial__img">
+            <img src="img/testimonial/testimonial1.png" alt="">
+          </div>
+          <div class="testimonial__content">
+            <h3>Stephen Mcmilan</h3>
+            <p>Executive, ACI Group</p>
+            <p class="testimonial__i">Also made from. Give may saying meat there from heaven it lights face had is gathered god earth light for life may itself shall whales made they're blessed whales also made from give may saying meat. There from heaven it lights face had also made from. Give may saying meat there from heaven</p>
+          </div>
         </div>
-        <div class="container wow fadeIn" data-wow-delay="0.1s">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-
-                        <a target="_blank" href="http://www.mobanwang.com/" title="网页模板" class="border-bottom">网页模板</a>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FAQs</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="testimonial__item text-center">
+          <div class="testimonial__img">
+            <img src="img/testimonial/testimonial1.png" alt="">
+          </div>
+          <div class="testimonial__content">
+            <h3>Stephen Mcmilan</h3>
+            <p>Executive, ACI Group</p>
+            <p class="testimonial__i">Also made from. Give may saying meat there from heaven it lights face had is gathered god earth light for life may itself shall whales made they're blessed whales also made from give may saying meat. There from heaven it lights face had also made from. Give may saying meat there from heaven</p>
+          </div>
         </div>
+        <div class="testimonial__item text-center">
+          <div class="testimonial__img">
+            <img src="img/testimonial/testimonial1.png" alt="">
+          </div>
+          <div class="testimonial__content">
+            <h3>Stephen Mcmilan</h3>
+            <p>Executive, ACI Group</p>
+            <p class="testimonial__i">Also made from. Give may saying meat there from heaven it lights face had is gathered god earth light for life may itself shall whales made they're blessed whales also made from give may saying meat. There from heaven it lights face had also made from. Give may saying meat there from heaven</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Footer End -->
+  </section>
+  <!--================ Testimonial section end =================-->         
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+  <!--================ Start Clients Logo Area =================-->
+	<section class="clients_logo_area section-padding">
+		<div class="container">
+			<div class="clients_slider owl-carousel">
+				<div class="item">
+					<img src="img/clients-logo/c-logo-1.png" alt="">
+				</div>
+				<div class="item">
+					<img src="img/clients-logo/c-logo-2.png" alt="">
+				</div>
+				<div class="item">
+					<img src="img/clients-logo/c-logo-3.png" alt="">
+				</div>
+				<div class="item">
+					<img src="img/clients-logo/c-logo-4.png" alt="">
+				</div>
+				<div class="item">
+					<img src="img/clients-logo/c-logo-5.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Clients Logo Area =================-->
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+
+
+
+  <!-- ================ start footer Area ================= -->
+  <footer class="footer-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-2 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+					<h4>Top Products</h4>
+					<ul>
+						<li><a href="#">Managed Website</a></li>
+						<li><a href="#">Manage Reputation</a></li>
+						<li><a href="#">Power Tools</a></li>
+						<li><a href="#">Marketing Service</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-2 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="#">Jobs</a></li>
+						<li><a href="#">Brand Assets</a></li>
+						<li><a href="#">Investor Relations</a></li>
+						<li><a href="#">Terms of Service</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-2 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+					<h4>Features</h4>
+					<ul>
+						<li><a href="#">Jobs</a></li>
+						<li><a href="#">Brand Assets</a></li>
+						<li><a href="#">Investor Relations</a></li>
+						<li><a href="#">Terms of Service</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-2 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+					<h4>Resources</h4>
+					<ul>
+						<li><a href="#">Guides</a></li>
+						<li><a href="#">Research</a></li>
+						<li><a href="#">Experts</a></li>
+						<li><a href="#">Agencies</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-4 col-md-8 mb-4 mb-xl-0 single-footer-widget">
+					<h4>Newsletter</h4>
+					<p>You can trust us. we only send promo offers,</p>
+					<div class="form-wrap" id="mc_embed_signup">
+						<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+						 method="get" class="form-inline">
+							<input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '"
+							 required="" type="email">
+							<button class="click-btn btn btn-default">subscribe</button>
+							<div style="position: absolute; left: -5000px;">
+								<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+							</div>
+
+							<div class="info"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom row align-items-center text-center text-lg-left">
+				<p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+				<div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-dribbble"></i></a>
+					<a href="#"><i class="fab fa-behance"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+  <!-- ================ End footer Area ================= -->
+
+  <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <script src="js/main.js"></script>
 </body>
-
 </html>
