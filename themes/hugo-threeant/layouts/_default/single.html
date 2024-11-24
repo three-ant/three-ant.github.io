@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>{{ .Title }}</h1>
+                <hr>
+                <p>探索最新的文章与话题</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <article class="article">
+                <header class="article-header">
+                    <!-- 文章标题 -->
+                    <h2 class="article-title">{{ .Title }}</h2>
+                    <!-- 文章分类、标签、时间 -->
+                    <div class="article-meta">
+                        <span class="article-category">分类: 
+                            {{ range .Params.categories }}
+                                <a href="/categories/{{ . | urlize }}">{{ . }}</a>
+                            {{ end }}
+                        </span>
+                        <span class="article-tags">标签: 
+                            {{ range .Params.tags }}
+                                <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+                            {{ end }}
+                        </span>
+                        <span class="article-date">发布于: {{ .Date.Format "2006-01-02" }}</span>
+                    </div>
+                </header>
+
+                <!-- 文章正文 -->
+                <div class="article-content">
+                    {{ .Content }}
+                </div>
+            </article>
+
+            <!-- 上一篇/下一篇 -->
+            <div class="article-navigation">
+                <div class="prev-article">
+                    {{ if .Prev }}
+                        <a href="{{ .Prev.Permalink }}" class="prev-link">上一篇: {{ .Prev.Title }}</a>
+                    {{ end }}
+                </div>
+                <div class="next-article">
+                    {{ if .Next }}
+                        <a href="{{ .Next.Permalink }}" class="next-link">下一篇: {{ .Next.Title }}</a>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+
+        <!-- 右侧：侧边栏 -->
+        <div class="sidebar">
+            <div class="search-box">
+                <input type="text" placeholder="搜索文章..." class="search-input">
+            </div>
+
+            <!-- 分类列表 -->
+            <div class="category-box">
+                <h3>分类</h3>
+                <ul>
+                    {{ range .Site.Params.categories }}
+                        <li><a href="/categories/{{ . | urlize }}">{{ . }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+
+            <!-- 标签列表 -->
+            <div class="tag-box">
+                <h3>标签</h3>
+                <ul>
+                    {{ range .Site.Params.tags }}
+                        <li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 三只蚂蚁</p>
+    </footer>
+</body>
+</html>
