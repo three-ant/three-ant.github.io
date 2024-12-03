@@ -3,7 +3,7 @@ layout: post
 title:  利用GitHub Action创建彩票开奖提醒
 date:   2024-12-01 22:01:35 +0300
 image:  02.jpg
-tags:   github action
+tags:   github
 ---
 
 ## 介绍

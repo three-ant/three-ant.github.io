@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  利用Github搭建个人博客
+title:  利用Github Pages搭建个人博客
 date:   2024-12-01 20:01:35 +0300
 image:  02.jpg
 tags:   博客
