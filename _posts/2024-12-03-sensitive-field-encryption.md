@@ -56,7 +56,7 @@ tags:   算法
 
 - 错误处理：如果索引超出命令字范围，则输出 ERROR。
 
-## 实现代码
+## 代码实现
 
 ```java
 import java.util.*;

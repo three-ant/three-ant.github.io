@@ -65,3 +65,46 @@ nohup ./frps -c frps.ini &
 ```bash
 nohup ./frpc -c frpc.ini &
 ```
+
+## 开机启动
+
+### 创建服务文件
+
+创建服务文件`/etc/systemd/system/frpc.service`
+
+```bash
+[Unit]
+Description=FRP Client (frpc)
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/path/to/frpc -c /path/to/frpc.toml
+Restart=always
+User=<your-username>
+WorkingDirectory=/path/to/frpc/directory
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=frpc
+
+[Install]
+WantedBy=multi-user.target
+```
+
+### 重新加载systemd配置
+
+```bash
+sudo  systemctl daemon-reload
+```
+
+### 启动服务
+
+```bash
+sudo systemctl enable frpc.service
+```
+
+### 检查服务状态
+
+```bash
+sudo systemctl status frpc.service
+```
